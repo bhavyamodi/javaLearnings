@@ -1,0 +1,39 @@
+Encapsulation:
+Encapsulation is bundling of data and methods that operates on the data into a single unit (class). It also involves restricting access to some of the object's components (Access modifiers).
+Significance :
+1. Data Hiding - Hides the internal state of an object and restrict direct access to its attributes. Which helps in unintended modification of the object's state, ensuring data integrity and security.
+2. Modularity - It promotes modularity by organising related data and methods into organised and unified units (classes). Which results in code readability, maintainability and reusability as the details are encapsulated within the class.
+3. Abstraction - It only expose the necessary features of the object while hiding the unnecessary details.
+-- Create a class representing a "Person" with private attributes such as name, age, and gender. Implement public methods to set and get these attributes, ensuring that access to the attributes is controlled through these methods.
+
+Inheritance:
+Inheritance is a mechanism where a class(subclass) can inherit the properties and behaviours (attributes and methods) from another class (superclass). Subclass can inherit the existing properties adding new features or overriding the existing one.
+Significance :
+1. Code Reusability - It promotes code reuse by allowing subclass to inherit common attributes and methods from the parent class. This results in code redundancy as the common functionality is implemented once and can be reused by multiple subclasses.
+2. Polymorphism - It enables polymorphism, where objects of different subclasses can be modified and used according to the needs.
+3.
+--Define a class hierarchy for different types of vehicles, such as "Vehicle" being the superclass and "Car", "Motorcycle", and "Truck" being subclasses. Implement specific properties and methods for each subclass, while inheriting common properties and methods from the superclass.
+
+Polymorphism:
+Create an interface called "Shape" with a method "calculateArea()". Implement this interface in classes representing different shapes like "Circle", "Rectangle", and "Triangle", each providing its own implementation of the "calculateArea()" method.
+
+Abstraction:
+Design an abstract class called "Animal" with abstract methods like "eat()" and "makeSound()". Implement concrete classes like "Dog", "Cat", and "Bird" that extend the "Animal" class and provide specific implementations for these methods.
+
+Association:
+Create classes representing "Department" and "Employee". Establish a one-to-many association between them, where a department can have multiple employees. Implement methods to add employees to a department and retrieve a list of employees belonging to a particular department.
+
+Aggregation:
+Define classes representing "Library" and "Book". Implement an aggregation relationship where the "Library" class has a list of "Book" objects. Implement methods to add books to the library, remove books, and search for books by title or author.
+
+Composition:
+Design classes for "House" and "Room". Implement a composition relationship where a "House" object is composed of multiple "Room" objects. Implement methods to add rooms to a house, remove rooms, and calculate the total area of the house based on the areas of its rooms.
+
+Dependency Injection:
+Create classes representing "Client" and "Service". Implement dependency injection in the "Client" class by passing an instance of the "Service" class as a constructor parameter. This allows the client to use the service without directly creating an instance of it.
+
+Interface Segregation:
+Define an interface called "DatabaseConnection" with methods like "connect()", "disconnect()", "executeQuery()", and "executeUpdate()". Implement separate interfaces like "ReadOnlyDatabaseConnection" and "WriteOnlyDatabaseConnection" that extend "DatabaseConnection" and provide subsets of these methods.
+
+Open/Closed Principle:
+Create a class representing a "ShapeCalculator" with methods for calculating the area and perimeter of different shapes. Implement this class in a way that it can be easily extended to support new shapes without modifying existing code.
