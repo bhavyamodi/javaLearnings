@@ -1,6 +1,8 @@
+package Inheritence;
+
 public class Vehicle {
     //Define a class hierarchy for different types of vehicles,
-    // such as "Vehicle" being the superclass and "Car", "Motorcycle", and "Truck" being subclasses.
+    // such as "Inheritence.Vehicle" being the superclass and "Inheritence.Car", "Inheritence.Motorcycle", and "Inheritence.Truck" being subclasses.
     // Implement specific properties and methods for each subclass,
     // while inheriting common properties and methods from the superclass.
 
@@ -33,7 +35,7 @@ public class Vehicle {
     }
 }
 
-// Car subclass
+// Inheritence.Car subclass
 class Car extends Vehicle {
     private int numberOfDoors;
 
@@ -59,7 +61,7 @@ class Car extends Vehicle {
     }
 }
 
-// Motorcycle subclass
+// Inheritence.Motorcycle subclass
 class Motorcycle extends Vehicle {
     private String type;
 
@@ -85,7 +87,7 @@ class Motorcycle extends Vehicle {
     }
 }
 
-// Truck subclass
+// Inheritence.Truck subclass
 class Truck extends Vehicle {
     private double loadCapacity;
 

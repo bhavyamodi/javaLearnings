@@ -1,3 +1,9 @@
+package Inheritence;
+
+import Inheritence.Car;
+import Inheritence.Motorcycle;
+import Inheritence.Truck;
+
 // Main class to test the vehicle hierarchy
 public class VehicleHierarchyTest {
     public static void main(String[] args) {
@@ -8,13 +14,13 @@ public class VehicleHierarchyTest {
         Truck truck = new Truck("Ford", "F-150", 2018, 2.5);
 
         // Displaying details of each vehicle
-        System.out.println("Car details:");
+        System.out.println("Inheritence.Car details:");
         car.displayCarDetails();
 
-        System.out.println("\nMotorcycle details:");
+        System.out.println("\nInheritence.Motorcycle details:");
         motorcycle.displayMotorcycleDetails();
 
-        System.out.println("\nTruck details:");
+        System.out.println("\nInheritence.Truck details:");
         truck.displayTruckDetails();
     }
 }

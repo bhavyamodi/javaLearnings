@@ -11,14 +11,17 @@ Inheritance is a mechanism where a class(subclass) can inherit the properties an
 Significance :
 1. Code Reusability - It promotes code reuse by allowing subclass to inherit common attributes and methods from the parent class. This results in code redundancy as the common functionality is implemented once and can be reused by multiple subclasses.
 2. Polymorphism - It enables polymorphism, where objects of different subclasses can be modified and used according to the needs.
-3.
---Define a class hierarchy for different types of vehicles, such as "Vehicle" being the superclass and "Car", "Motorcycle", and "Truck" being subclasses. Implement specific properties and methods for each subclass, while inheriting common properties and methods from the superclass.
+--Define a class hierarchy for different types of vehicles, such as "Inheritance.Vehicle" being the superclass and "Inheritance.Car", "Inheritance.Motorcycle", and "Inheritance.Truck" being subclasses. Implement specific properties and methods for each subclass, while inheriting common properties and methods from the superclass.
 
 Polymorphism:
-Create an interface called "Shape" with a method "calculateArea()". Implement this interface in classes representing different shapes like "Circle", "Rectangle", and "Triangle", each providing its own implementation of the "calculateArea()" method.
+Polymorphism is the ability of an object to take multiple forms or behaviours based on the implementation or the way they have been used. Through polymorphism the object of different classes can be treated as the object of common superclass with the help of inheritance or interface implementation.
+Significance :
+1. Code Reusability - it allows code reuse by allowing different classes to share a common interface or superclass, this enables the reuse of methods and behaviours across related classes.
+2. Flexibility - It enables dynamic method binding, 
+--Create an interface called "Polymorphism.Shape" with a method "calculateArea()". Implement this interface in classes representing different shapes like "Polymorphism.Circle", "Polymorphism.Rectangle", and "Polymorphism.Triangle", each providing its own implementation of the "calculateArea()" method.
 
 Abstraction:
-Design an abstract class called "Animal" with abstract methods like "eat()" and "makeSound()". Implement concrete classes like "Dog", "Cat", and "Bird" that extend the "Animal" class and provide specific implementations for these methods.
+--Design an abstract class called "Animal" with abstract methods like "eat()" and "makeSound()". Implement concrete classes like "Dog", "Cat", and "Bird" that extend the "Animal" class and provide specific implementations for these methods.
 
 Association:
 Create classes representing "Department" and "Employee". Establish a one-to-many association between them, where a department can have multiple employees. Implement methods to add employees to a department and retrieve a list of employees belonging to a particular department.
