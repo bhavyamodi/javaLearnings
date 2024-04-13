@@ -21,6 +21,10 @@ Significance :
 --Create an interface called "Polymorphism.Shape" with a method "calculateArea()". Implement this interface in classes representing different shapes like "Polymorphism.Circle", "Polymorphism.Rectangle", and "Polymorphism.Triangle", each providing its own implementation of the "calculateArea()" method.
 
 Abstraction:
+Abstraction is the process of hiding the unnecessary details and providing only the essential features or functionality to the user. Abstraction can be achieved through abstract classes and interfaces which only provides the blueprint without actually providing the implementation of its methods.
+Significance :
+1. Modularity - Promotes modularity by separating the interface from the implementation details, which helps in code maintainability and reusability.
+2. Encapsulation - By encapsulating the implementation details, abstraction protects the object's integrity and ensures data security.
 --Design an abstract class called "Animal" with abstract methods like "eat()" and "makeSound()". Implement concrete classes like "Dog", "Cat", and "Bird" that extend the "Animal" class and provide specific implementations for these methods.
 
 Association:
