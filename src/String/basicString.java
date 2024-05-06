@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class basicString {
 
     public static void main(String[] args){
-        String example = "hgfhjhdgdghthfh";
+        String example = "abcdefbcdefcdefdefeff";
         toggleString(example);
         sortString(example);
 
@@ -39,20 +39,23 @@ public class basicString {
     public static void sortString(String s){
 
         int[] cnt = new int[26];
-        for(int i =0;i<26; i++){
+        for(int i =0;i<s.length(); i++){
             cnt[s.charAt(i) - 97]++;
         }
 
         StringBuilder answer = new StringBuilder(s);
         int k = 0;
-        for(int i =0; i< 26;i++){
-            char ch = (char) (s.charAt(i)+97);
+        for(int i =0; i< s.length();i++){
+            char ch = s.charAt(i);
             for(int j =0;j <cnt[i]; j++){
                 answer.setCharAt(k, ch);
+                System.out.println("char "+ch+" k "+k);
                 k++;
             }
         }
+
         System.out.println(answer);
+        System.out.println(Arrays.toString(cnt));
     }
 
 
