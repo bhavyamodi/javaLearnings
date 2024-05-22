@@ -7,11 +7,13 @@ public class basicString {
     public static void main(String[] args){
         String example = "abcdeAAFFAAbcdEfcdefAeff";
         System.out.println("original String : "+example);
-        toggleString(example);
-        sortString(example);
+        //toggleString(example);
+        //sortString(example);
         //sortByOccurrence(example);
 
-        substringOfStringIsPalindrome(example);
+        //substringOfStringIsPalindrome(example);
+
+        reverseOnlyLetters("Test1ng-Leet=code-Q!");
 
 
     }
@@ -122,5 +124,35 @@ public class basicString {
         }
         return true;
     }
+
+    public static String reverseOnlyLetters(String s){
+        StringBuilder result = new StringBuilder(s);
+
+        //s.charAt(i) >= 65 && s.charAt(i) <= 90
+        //s.charAt(i) >= 97 && s.charAt(i) <= 122
+        int low = 0;
+        int high = s.length() - 1;
+        while(low < high){
+            if(!((s.charAt(low) >= 65 && s.charAt(low) <= 90) || (s.charAt(low) >= 97 && s.charAt(low) <= 122))){
+                low++;
+                continue;
+            }
+            if(!((s.charAt(high) >= 65 && s.charAt(high) <= 90) || (s.charAt(high) >= 97 && s.charAt(high) <= 122))){
+                high--;
+                continue;
+            }
+            char temp = result.charAt(low);
+            result.setCharAt(low,result.charAt(high));
+            result.setCharAt(high,temp);
+            low++;
+            high--;
+
+        }
+        System.out.println(s);
+        System.out.println(result);
+        return String.valueOf(result);
+    }
+
+
 
 }
